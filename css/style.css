@@ -180,7 +180,8 @@ input[type="radio"]:disabled ~ label {
 }
 
 .nav-catalog .current-page,
-.button-dev:hover {
+.button-dev:hover,
+.button-dev:focus {
   color: #000000;
 
   background-color: #ffffff;
