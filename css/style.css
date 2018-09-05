@@ -186,3 +186,7 @@ input[type="radio"]:disabled ~ label {
 
   background-color: #ffffff;
 }
+
+.list-item time {
+  text-transform: none;
+}
