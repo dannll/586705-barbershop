@@ -18,3 +18,139 @@ body {
 a {
   text-decoration: none;
 }
+
+.header-menu,
+.inner-header {
+  background-color: #000000;
+}
+
+.site-navigation,
+.user-navigation,
+.features-list,
+.news-list,
+.breadcrumbs,
+.catalog-items-list,
+.inner-catalog-form ul,
+.nav-catalog ul,
+.photo-item-list,
+.item-consist,
+.best-tools ul {
+  list-style: none;
+}
+
+.header-menu a  {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.features-list h3,
+.index-column h2,
+.modal-login h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-column,
+.modal-login,
+.inner {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/background-white-pattern.jpg");
+  background-repeat: repeat;
+}
+
+.button {
+  border: none;
+
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background-color: #000000;
+}
+
+.main-footer {
+  background-color: #222222;
+  background-image: url("background-black-pattern.jpg");
+  background-repeat: repeat;
+}
+
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.modal-login a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.user-form input,
+.reservation-form input {
+  text-transform: uppercase;
+}
+
+.inner h1 {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.inner-form fieldset {
+  border: none;
+}
+
+.inner-form legend,
+.item-info h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-form label {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-items-list li {
+  background-color: #ffffff;
+}
+
+.catalog-items-list a {
+  font-size: 14px;
+  color: #000000;
+}
+
+.catalog-items-list .button {
+  color: #ffffff;
+}
+
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+
+.item-code {
+  color: #aeaeae;
+}
+
+.product-price {
+  background-color: #e5e5e5;
+}
+
+.inner-price .price-promo {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.best-tools h2,
+.price-service h2,
+.about-us h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
