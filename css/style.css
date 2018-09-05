@@ -187,6 +187,7 @@ input[type="radio"]:disabled ~ label {
   background-color: #ffffff;
 }
 
-.list-item time {
+.list-item time,
+.catalog-category {
   text-transform: none;
 }
