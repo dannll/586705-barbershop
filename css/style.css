@@ -321,6 +321,10 @@ input[type="radio"]:disabled ~ label {
   text-transform: none;
 }
 
+.footer-inner-catalog {
+  color: #ffffff;
+}
+
 .footer-contact {
   margin-right: 80px;
 }
