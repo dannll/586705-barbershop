@@ -87,6 +87,16 @@ a {
   background-color: #242424;
 }
 
+.features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.features-list li {
+  text-align: center;
+}
+
 .features-list h3,
 .index-column h2,
 .modal-login h2 {
