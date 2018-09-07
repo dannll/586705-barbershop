@@ -87,6 +87,10 @@ a {
   background-color: #242424;
 }
 
+.features {
+  margin-bottom: 80px;
+}
+
 .features-list {
   margin: 0;
   padding: 0;
