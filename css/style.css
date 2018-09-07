@@ -199,8 +199,8 @@ a {
 }
 
 .main-footer {
+  background-image: url("../img/background-black-pattern.jpg");
   background-color: #222222;
-  background-image: url("background-black-pattern.jpg");
   background-repeat: repeat;
 }
 
@@ -321,7 +321,25 @@ input[type="radio"]:disabled ~ label {
   text-transform: none;
 }
 
-.footer-inner-catalog {
+.photo-item-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+}
+
+.item-wrapper {
+  display: flex;
+}
+
+.item-consist {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-inner-catalog,
+.footer-inner-item {
   color: #ffffff;
 }
 
