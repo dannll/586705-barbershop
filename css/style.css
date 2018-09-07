@@ -123,6 +123,24 @@ a {
   padding-bottom: 60px;
 }
 
+.catalog-wrapper {
+  display: flex;
+}
+
+.catalog-items-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-items-list li {
+  width: 220px;
+}
+
+.nav-catalog ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
 .news {
   width: 460px;
@@ -202,6 +220,10 @@ a {
 }
 
 .inner h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
   font-size: 30px;
   line-height: 42px;
   font-weight: 700;
@@ -210,6 +232,12 @@ a {
 
 .inner-header .header-menu {
   margin-bottom: 0;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .breadcrumbs a {
