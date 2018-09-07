@@ -52,7 +52,8 @@ a {
   margin-right: auto;
 }
 
-.header-menu .container {
+.header-menu .container,
+.main-footer .container {
   display: flex;
 }
 
@@ -275,4 +276,12 @@ input[type="radio"]:disabled ~ label {
 .list-item time,
 .catalog-category {
   text-transform: none;
+}
+
+.footer-contact {
+  margin-right: 80px;
+}
+
+.footer-social {
+  margin-right: 30px;
 }
