@@ -244,6 +244,10 @@ a {
   color: #000000;
 }
 
+.inner-price .breadcrumbs {
+  margin-bottom: 40px;
+}
+
 .inner-form fieldset {
   border: none;
 }
@@ -289,6 +293,11 @@ a {
   line-height: 48px;
 }
 
+.best-tools {
+  width: 400px;
+  margin-right: 80px;
+}
+
 .best-tools h2,
 .price-service h2,
 .about-us h2 {
@@ -329,8 +338,18 @@ input[type="radio"]:disabled ~ label {
   width: 480px;
 }
 
-.item-wrapper {
+.item-wrapper,
+.price-wrapper,
+.about-wrapper {
   display: flex;
+}
+
+.about-wrapper p:first-child {
+  margin-right: 20px;
+}
+
+.about-us {
+  padding-bottom: 40px;
 }
 
 .item-consist {
@@ -339,7 +358,8 @@ input[type="radio"]:disabled ~ label {
 }
 
 .footer-inner-catalog,
-.footer-inner-item {
+.footer-inner-item,
+.footer-inner-price {
   color: #ffffff;
 }
 
