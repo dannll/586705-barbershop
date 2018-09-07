@@ -36,6 +36,10 @@ a {
   margin-bottom: 75px;
 }
 
+.inner-header {
+  margin-bottom: 55px;
+}
+
 .main-header-logo {
   width: 371px;
   height: 175px;
@@ -53,8 +57,15 @@ a {
 }
 
 .header-menu .container,
-.main-footer .container {
+.main-footer .container,
+.inner-header .container,
+.inner-header .header-menu {
   display: flex;
+}
+
+.inner-header .header-menu {
+  padding-top: 20px;
+  padding-bottom: 26px;
 }
 
 .site-navigation,
@@ -195,6 +206,10 @@ a {
   line-height: 42px;
   font-weight: 700;
   color: #000000;
+}
+
+.inner-header .header-menu {
+  margin-bottom: 0;
 }
 
 .breadcrumbs a {
