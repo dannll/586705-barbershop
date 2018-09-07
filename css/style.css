@@ -105,6 +105,37 @@ a {
   text-align: center;
 }
 
+.index-column {
+  display: flex;
+  margin-bottom: 36px;
+  padding-bottom: 60px;
+}
+
+
+.news {
+  width: 460px;
+  padding-left: 80px;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+}
+
+.photogallery {
+  width: 320px;
+}
+
+.contact {
+  width: 460px;
+  padding-left: 60px;
+  margin-right: 100px;
+}
+
+.reservation {
+  width: 300px;
+}
+
 .features-list h3,
 .index-column h2,
 .modal-login h2 {
