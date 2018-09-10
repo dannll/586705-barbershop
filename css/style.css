@@ -19,6 +19,17 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header-menu,
 .inner-header {
   background-color: #000000;
@@ -33,7 +44,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 
 .inner-header {
@@ -154,7 +165,7 @@ a {
 }
 
 .features {
-  margin-bottom: 80px;
+  margin-bottom: 63px;
 }
 
 
@@ -164,8 +175,26 @@ a {
   display: flex;
 }
 
+.features-list h3 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 46px;
+}
+
 .features-list li {
+  width: 300px;
+  margin-right: 20px;
+
   text-align: center;
+}
+
+.features-list li:last-child {
+  margin-right: 0;
+}
+
+.features-list-cool p {
+  padding-left: 12px;
+  padding-right: 10px;
 }
 
 .index-column {
