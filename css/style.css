@@ -11,7 +11,7 @@ body {
 
   background-color: #000000;
   background-image: url("../img/background-main-image.jpg");
-  background-position: top center;
+  background-position: center 40px;
   background-repeat: no-repeat;
 }
 
@@ -73,6 +73,21 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.site-navigation li,
+.user-navigation li {
+  line-height: 20px;
+}
+
+.site-navigation {
+  width: 780px;
+  margin-right: 20px;
+}
+
+.user-navigation {
+  width: 140px;
 }
 
 .site-navigation,
@@ -91,8 +106,20 @@ a {
 
 .header-menu a  {
   font-size: 16px;
-  line-height: 20px;
   color: #ffffff;
+}
+
+.login-link {
+  padding-left: 31px;
+}
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .site-navigation a:hover,
@@ -100,6 +127,30 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #242424;
+}
+
+.login-link a {
+  position: relative;
+  padding-left: 53px;
+}
+
+.login-link a::before {
+  content: "";
+
+  position: absolute;
+  top: 29px;
+  left: 23px;
+
+  width: 16px;
+  height: 14px;
+
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.login-link a:hover::before {
+  opacity: 1;
 }
 
 .features {
