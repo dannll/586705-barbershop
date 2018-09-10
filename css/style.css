@@ -260,7 +260,7 @@ a {
 
 .contact {
   width: 383px;
-  margin-right: 100px;
+  margin-right: 98px;
 }
 
 .contact p {
@@ -315,7 +315,7 @@ a {
   display: flex;
   position: relative;
   margin-bottom: 36px;
-  padding-bottom: 50px;
+  padding-bottom: 49px;
   padding-top: 45px;
 
   background-color: #f8f5f2;
@@ -346,11 +346,18 @@ a {
 }
 
 .button-prev,
-.button-next {
+.button-next,
+.button-submit {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 55px;
   padding-right: 48px;
+}
+
+.button-submit {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
 }
 
 .photogallery img {
@@ -368,6 +375,8 @@ a {
 }
 
 .main-footer {
+  margin-top: 66px;
+
   background-image: url("../img/background-black-pattern.jpg");
   background-color: #222222;
   background-repeat: repeat;
@@ -383,9 +392,42 @@ a {
   text-decoration: underline;
 }
 
-.user-form input,
+.reservation-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reservation-form p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 11px;
+}
+
+.reservation-form label {
+  display: block;
+  padding-left: 15px;
+  margin-bottom: 11px;
+
+  line-height: 18px;
+}
+
 .reservation-form input {
-  text-transform: uppercase;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  width: 140px;
+  padding-left: 15px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+
+  color: #000000;
+}
+
+.reservation-form p:nth-child(2n + 1) {
+  margin-right: 20px;
+}
+
+.form-item:last-of-type {
+  margin-bottom: 20px;
 }
 
 .inner h1 {
