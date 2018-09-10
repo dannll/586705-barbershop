@@ -182,6 +182,7 @@ a {
 }
 
 .features-list li {
+  position: relative;
   width: 300px;
   margin-right: 20px;
 
@@ -192,15 +193,21 @@ a {
   margin-right: 0;
 }
 
+.features-list li::after {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+  top: 52px;
+  left: 140px;
+}
+
 .features-list-cool p {
   padding-left: 12px;
   padding-right: 10px;
-}
-
-.index-column {
-  display: flex;
-  margin-bottom: 36px;
-  padding-bottom: 60px;
 }
 
 .catalog-wrapper {
@@ -223,13 +230,28 @@ a {
 }
 
 .news {
-  width: 460px;
-  padding-left: 80px;
+  width: 380px;
+  margin-right: 100px;
+}
+
+.news h2,
+.photogallery h2,
+.contact h2,
+.reservation h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.photogallery h2 {
+  margin-bottom: 23px;
+  padding-left: 4px;
 }
 
 .news-list {
   margin: 0;
   padding: 0;
+  margin-bottom: 39px;
 }
 
 .photogallery {
@@ -237,9 +259,32 @@ a {
 }
 
 .contact {
-  width: 460px;
-  padding-left: 60px;
+  width: 383px;
   margin-right: 100px;
+}
+
+.contact p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contact p:last-of-type {
+  margin-bottom: 33px;
+}
+
+.contact .button {
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+.contact .button-drv {
+  margin-right: 18px;
+}
+
+.contact .button-feedback {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .reservation {
@@ -256,6 +301,8 @@ a {
 .index-column,
 .modal-login,
 .inner-page {
+  padding-left: 80px;
+
   color: #000000;
 
   background-color: #f8f5f2;
@@ -263,14 +310,56 @@ a {
   background-repeat: repeat;
 }
 
+
+.index-column {
+  display: flex;
+  position: relative;
+  margin-bottom: 36px;
+  padding-bottom: 50px;
+  padding-top: 45px;
+
+  background-color: #f8f5f2;
+  background-image:
+    url("../img/border.png"),
+    url("../img/background-white-pattern.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center center;
+}
+
+
 .button {
   border: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 34px;
+  padding-right: 34px;
 
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
 
   background-color: #000000;
+}
+
+.button-prev,
+.button-next {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 55px;
+  padding-right: 48px;
+}
+
+.photogallery img {
+  margin-bottom: 30px;
+  border: 7px solid #ffffff;
+}
+
+.button-prev {
+  margin-right: 17px;
 }
 
 .button:hover,
@@ -405,9 +494,22 @@ input[type="radio"]:disabled ~ label {
   background-color: #ffffff;
 }
 
+.list-item {
+  margin-bottom: 21px;
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+}
+
 .list-item time,
 .catalog-category {
   text-transform: none;
+}
+
+.list-item p {
+  margin: 0;
+  padding: 0;
 }
 
 .photo-item-list {
