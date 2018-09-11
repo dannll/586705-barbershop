@@ -369,6 +369,14 @@ a {
   width: 100%;
 }
 
+.button-submit-catalog {
+  width: 112px;
+  font-size: 13px;
+  line-height: 18px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+}
+
 .modal-login .button {
   box-sizing: border-box;
   padding-right: 10px;
@@ -503,6 +511,7 @@ a {
   padding: 0;
   margin: 0;
   display: flex;
+  margin-bottom: 45px;
 }
 
 .breadcrumbs a {
@@ -515,6 +524,10 @@ a {
 
 .inner-form fieldset {
   border: none;
+}
+
+.inner-form legend {
+
 }
 
 .inner-form legend,
@@ -679,7 +692,7 @@ input[type="radio"]:disabled ~ label {
 }
 
 .modal-login {
-  display: none; /*Модальное окно скрыто*/
+  display: none; /*Скрыл modal-login*/
   position: fixed;
   top: calc(50% - 230px);
   left: calc(50% - 230px);
@@ -719,7 +732,8 @@ input[type="radio"]:disabled ~ label {
   padding-left: 30px;
 }
 
-.user-form .remember-field::before {
+.user-form .remember-field::before,
+.checkbox-label::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -730,8 +744,27 @@ input[type="radio"]:disabled ~ label {
   border: 2px solid #000000;
 }
 
-input[type="checkbox"]:checked ~ .remember-field::before {
+.radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -2px;
+
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+input[type="checkbox"]:checked ~ .remember-field::before,
+input[type="checkbox"]:checked ~ .checkbox-label::before {
   background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+input[type="radio"]:checked ~ .radio-label::before {
+  background-image: url("../img/radio-shape.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -846,4 +879,44 @@ input[type="checkbox"]:checked ~ .remember-field::before {
   position: absolute;
   width: 0;
   height: 0;
+}
+
+.inner-catalog-form form {
+  width: 176px;
+}
+
+.inner-catalog-form fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.inner-catalog-form legend {
+  margin-bottom: 30px;
+}
+
+.inner-catalog-form label {
+  display: block;
+}
+
+.inner-catalog-form ul {
+  margin: 0;
+  padding: 0;
+}
+
+.inner-catalog-form fieldset {
+  margin-bottom: 26px;
+}
+
+.inner-catalog-form fieldset:last-of-type {
+  margin-bottom: 30px;
+}
+
+.inner-catalog-form li {
+  margin-bottom: 20px;
+}
+
+.checkbox-label,
+.radio-label {
+  position: relative;
+  padding-left: 43px;
 }
