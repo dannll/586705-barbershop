@@ -881,6 +881,10 @@ input[type="radio"]:checked ~ .radio-label::before {
   height: 0;
 }
 
+.inner-catalog-form {
+  margin-right: 63px;
+}
+
 .inner-catalog-form form {
   width: 176px;
 }
@@ -919,4 +923,52 @@ input[type="radio"]:checked ~ .radio-label::before {
 .radio-label {
   position: relative;
   padding-left: 43px;
+}
+
+.catalog-items-list,
+.catalog-items-list h3,
+.catalog-items-list p {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-items-list {
+  padding-top: 7px;
+}
+
+.catalog-items-list li {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 20px;
+
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.catalog-items-list li:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.catalog-items-list .catalog-items-image {
+  order: -1;
+  margin-bottom: 6px;
+}
+
+.catalog-items-list .catalog-items-wrapper {
+  display: flex;
+  margin-left: 16px;
+}
+
+.catalog-items-list h3 {
+  margin-left: 17px;
+  margin-bottom: 12px;
+}
+
+.catalog-info a {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-info span {
+  line-height: 18px;
 }
