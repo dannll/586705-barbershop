@@ -781,3 +781,20 @@ input[type="checkbox"]:checked ~ .remember-field::before {
     background-color: transparent;
     background-size: 20px;
 }
+
+.modal-map {
+  position: fixed;
+  display: none; /*Скрыл modal-map*/
+  top: calc(50% - 287px);
+  left: calc(50% - 390px);
+}
+
+.modal-map img {
+  border: 7px solid #ffffff;
+  box-shadow: 0 30px 50px 0 rgba(00, 01, 01, 0.25);
+}
+
+.modal-map .modal-close {
+  left: 790px;
+  top: 10px;
+}
