@@ -49,7 +49,7 @@ a {
 }
 
 .inner-header {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .main-header-logo {
@@ -487,7 +487,7 @@ a {
 .inner h1 {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   font-size: 30px;
   line-height: 42px;
@@ -823,4 +823,27 @@ input[type="checkbox"]:checked ~ .remember-field::before {
 
 .site-navigation-current .href-style {
   box-shadow: inset 0 -4px 0 0 #ffffff;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 40px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 7px;
+  margin-left: 17px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+.breadcrumbs li:last-of-type::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
 }
