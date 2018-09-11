@@ -75,10 +75,10 @@ a {
   display: flex;
 }
 
-.inner-header .header-menu {
+/* .inner-header .header-menu {?????
   padding-top: 20px;
   padding-bottom: 26px;
-}
+} */
 
 .site-navigation,
 .user-navigation {
@@ -310,6 +310,11 @@ a {
   background-color: #f8f5f2;
   background-image: url("../img/background-white-pattern.jpg");
   background-repeat: repeat;
+}
+
+.inner-page {
+  padding-left: 0;/*????*/
+  padding-right: 0;
 }
 
 
@@ -797,4 +802,23 @@ input[type="checkbox"]:checked ~ .remember-field::before {
 .modal-map .modal-close {
   left: 790px;
   top: 10px;
+}
+
+.inner-header .header-logo {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-header .header-menu {
+  width: 790px;
+}
+
+.href-style {
+  padding-bottom: 26px;
+}
+
+.site-navigation-current .href-style {
+  box-shadow: inset 0 -4px 0 0 #ffffff;
 }
