@@ -399,7 +399,7 @@ a {
 
 .main-footer {
   margin-top: 64px;
-  padding-top: 60px;
+  padding-top: 59px;
   padding-bottom: 33px;
 
   color: #ffffff;
@@ -461,13 +461,14 @@ a {
 .reservation-form p {
   margin: 0;
   padding: 0;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
 .reservation-form label {
   display: block;
-  padding-left: 15px;
+  padding-left: 17px;
   margin-bottom: 11px;
+  padding-top: 2px;
 
   line-height: 18px;
 }
@@ -490,7 +491,7 @@ a {
 }
 
 .form-item:last-of-type {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .inner h1 {
@@ -670,11 +671,11 @@ input[type="radio"]:disabled ~ label {
 }
 
 .footer-contact {
-  margin-right: 119px;
+  margin-right: 95px;
 }
 
 .footer-social {
-  margin-right: 260px;
+  margin-right: 259px;
 }
 
 .footer-dev a {
@@ -704,7 +705,7 @@ input[type="radio"]:disabled ~ label {
 }
 
 .modal-login {
-  display: none; /*Скрыл modal-login*/
+  display: none;/*Скрыл modal-login*/
   position: fixed;
   top: calc(50% - 230px);
   left: calc(50% - 230px);
@@ -824,8 +825,8 @@ input[type="radio"]:checked ~ .radio-label::before {
     border: none;
     width: 20px;
     height: 21px;
-    top: 6px;
-    left: 470px;
+    top: 9px;
+    left: 474px;
 
 
     background-image: url("../img/cross-close.svg");
@@ -847,8 +848,8 @@ input[type="radio"]:checked ~ .radio-label::before {
 }
 
 .modal-map .modal-close {
-  left: 790px;
-  top: 10px;
+  left: 792px;
+  top: 9px;
 }
 
 .inner-header .header-logo {
@@ -1167,4 +1168,31 @@ input[type="radio"]:checked ~ .radio-label::before {
 
 .about-wrapper p:first-child {
   margin-right: 97px;
+}
+
+.features-list-expensive p {
+  box-sizing: border-box;
+  width: 296px;
+  padding-left: 5px;
+}
+
+.button-prev {
+  margin-right: 15px;
+}
+
+.button-prev,
+.button-next {
+  padding: 0;
+  width: 141px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.reservation .reservation-info {
+  padding-left: 3px;
+  padding-right: 5px;
+}
+
+.contact h2 {
+  margin-bottom: 22px;
 }
