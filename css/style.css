@@ -222,6 +222,7 @@ a {
 
 .catalog-items-list li {
   width: 220px;
+  margin-bottom: 21px;
 }
 
 .nav-catalog ul {
@@ -548,7 +549,19 @@ a {
 .catalog-items-list a {
   display: block;
   font-size: 14px;
+  line-height: 24px;
   color: #000000;
+}
+
+.catalog-items-wrapper {
+  margin-bottom: 16px;
+}
+
+.catalog-items-wrapper .button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .catalog-items-list .button {
@@ -766,7 +779,7 @@ input[type="checkbox"]:checked ~ .checkbox-label::before {
 input[type="radio"]:checked ~ .radio-label::before {
   background-image: url("../img/radio-shape.svg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 4px center;
 }
 
 .user-form p {
@@ -957,6 +970,13 @@ input[type="radio"]:checked ~ .radio-label::before {
 .catalog-items-list .catalog-items-wrapper {
   display: flex;
   margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.catalog-items-wrapper .product-price {
+  width: 110px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .catalog-items-list h3 {
@@ -971,4 +991,24 @@ input[type="radio"]:checked ~ .radio-label::before {
 
 .catalog-info span {
   line-height: 18px;
+}
+
+.inner-catalog-items .nav-catalog {
+  margin-top: 24px;
+}
+
+.inner-catalog-items .nav-catalog a {
+  display: block;
+  width: 43px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  margin-right: 7px;
+
+  text-align: center;
+}
+
+.inner-footer-catalog {
+  margin-top: 47px;
 }
