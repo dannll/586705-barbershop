@@ -520,7 +520,7 @@ a {
 }
 
 .inner-price .breadcrumbs {
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 }
 
 .inner-form fieldset {
@@ -588,7 +588,7 @@ a {
 
 .best-tools {
   width: 400px;
-  margin-right: 80px;
+  margin-right: 82px;
 }
 
 .best-tools h2,
@@ -656,10 +656,6 @@ input[type="radio"]:disabled ~ label {
 
 .about-wrapper p:first-child {
   margin-right: 20px;
-}
-
-.about-us {
-  padding-bottom: 40px;
 }
 
 .item-consist {
@@ -880,7 +876,8 @@ input[type="radio"]:checked ~ .radio-label::before {
 }
 
 .breadcrumbs li::after,
-.item-consist li::before {
+.item-consist li::before,
+.best-tools li::before {
   content: "";
   position: absolute;
   width: 7px;
@@ -1068,11 +1065,106 @@ input[type="radio"]:checked ~ .radio-label::before {
   padding-left: 21px;
 }
 
-.item-consist li::before {
+.item-consist li::before,
+.best-tools li::before {
   left: 3px;
   margin-left: 0;
 }
 
 .inner-footer-item {
   margin-top: 41px;
+}
+
+.price-promo {
+  display: block;
+  position: relative;
+  width: 940px;
+  margin-bottom: 61px;
+
+  text-align: center;
+}
+
+.price-promo::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: -1px;
+  width: 160px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.price-promo::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 779px;
+  width: 160px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.price-wrapper h2,
+.about-us h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.best-tools {
+  margin-bottom: 44px;
+}
+
+.best-tools ul {
+  margin: 0;
+  padding: 0;
+}
+
+.best-tools h2 {
+  width: 240px;
+  margin-bottom: 28px;
+}
+
+.best-tools li {
+  position: relative;
+  margin-bottom: 13px;
+  padding-left: 21px;
+}
+
+.price-service h2 {
+  width: 190px;
+  margin-bottom: 34px;
+}
+
+.price-service table {
+  border-collapse: collapse;
+  border: 2px solid #000000;
+}
+
+
+.price-service td {
+  box-sizing: border-box;
+  width: 230px;
+  border: 2px solid #000000;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.price-service td:first-child {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.about-us h2 {
+  margin-bottom: 16px;
+}
+
+.about-wrapper p {
+  width: 386px;
+}
+
+.about-wrapper p:first-child {
+  margin-right: 97px;
 }
