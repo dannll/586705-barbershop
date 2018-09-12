@@ -1017,6 +1017,7 @@ input[type="radio"]:checked ~ .radio-label::before {
 
 .inner-item .item-wrapper {
   padding-top: 7px;
+  margin-bottom: 38px;
 }
 
 .photo-item-list li:not(.current) {
@@ -1195,4 +1196,12 @@ input[type="radio"]:checked ~ .radio-label::before {
 
 .contact h2 {
   margin-bottom: 22px;
+}
+
+.inner-footer-item {
+  margin-top: 4px;
+}
+
+.inner-footer-price {
+  padding-top: 54px;
 }
