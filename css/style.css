@@ -175,6 +175,7 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features-list h3 {
@@ -689,6 +690,7 @@ input[type="radio"]:disabled ~ label {
 
 .footer-social ul {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 
@@ -700,7 +702,7 @@ input[type="radio"]:disabled ~ label {
   justify-content: center;
   align-items: center;
   background-color: #000000;
-  margin-right: 6px;
+  margin-right: 5px;
 }
 
 .footer-social li:last-child {
@@ -1164,7 +1166,7 @@ input[type="radio"]:checked ~ .radio-label::before {
 }
 
 .about-us h2 {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .about-wrapper p {
@@ -1246,4 +1248,8 @@ input[type="radio"]:disabled ~ label {
 .catalog-items-list li:hover,
 .catalog-items-list li:focus {
   box-shadow: 0 5px 25px 0 rgba(0, 1, 1, 0.3);
+}
+
+.about-wrapper {
+  flex-wrap: wrap;
 }
