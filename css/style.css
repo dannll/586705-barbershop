@@ -161,7 +161,8 @@ a {
   opacity: 0.3;
 }
 
-.login-link a:hover::before {
+.login-link a:hover::before,
+.login-link a:focus::before {
   opacity: 1;
 }
 
@@ -218,6 +219,7 @@ a {
 .catalog-items-list {
   display: flex;
   flex-wrap: wrap;
+  width: 700px;
 }
 
 .catalog-items-list li {
@@ -351,6 +353,7 @@ a {
   line-height: 24px;
 
   background-color: #000000;
+  cursor: pointer;
 }
 
 .button-prev,
@@ -910,7 +913,7 @@ input[type="radio"]:checked ~ .radio-label::before {
 }
 
 .inner-catalog-form legend {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .inner-catalog-form label {
@@ -931,7 +934,7 @@ input[type="radio"]:checked ~ .radio-label::before {
 }
 
 .inner-catalog-form li {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .checkbox-label,
@@ -1031,6 +1034,7 @@ input[type="radio"]:checked ~ .radio-label::before {
 .item-available,
 .item-code {
   display: inline-block;
+  vertical-align: center;
   margin: 0;
   padding: 0;
 }
@@ -1209,4 +1213,37 @@ input[type="radio"]:checked ~ .radio-label::before {
 .footer-contact {
   width: 312px;
   margin-right: 90px;
+}
+
+.reservation-form input {
+  background-color: #f9f6f3;
+}
+
+.photo-item-list img {
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  background-color: #ffffff;
+}
+
+.footer-social a:hover path,
+.footer-social a:focus path {
+  fill: #000000;
+}
+
+.form-item input:hover,
+.form-item input:focus {
+  border: 2px solid #663d15;
+}
+
+input[type="checkbox"]:disabled ~ label,
+input[type="radio"]:disabled ~ label {
+  opacity: 0.3;
+}
+
+.catalog-items-list li:hover,
+.catalog-items-list li:focus {
+  box-shadow: 0 5px 25px 0 rgba(0, 1, 1, 0.3);
 }
