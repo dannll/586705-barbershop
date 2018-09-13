@@ -680,7 +680,7 @@ input[type="radio"]:disabled ~ label {
 
 .footer-dev a {
   width: 140px;
-  padding-left: 29px;
+  padding-left: 28px;
   padding-right: 28px;
 }
 
@@ -1178,7 +1178,7 @@ input[type="radio"]:checked ~ .radio-label::before {
 }
 
 .button-prev {
-  margin-right: 15px;
+  margin-right: 14px;
 }
 
 .button-prev,
@@ -1204,4 +1204,9 @@ input[type="radio"]:checked ~ .radio-label::before {
 
 .inner-footer-price {
   padding-top: 54px;
+}
+
+.footer-contact {
+  width: 312px;
+  margin-right: 90px;
 }
