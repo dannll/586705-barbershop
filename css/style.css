@@ -838,6 +838,12 @@ input[type="radio"]:checked ~ .radio-label::before {
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: 20px;
+
+    cursor: pointer;
+}
+
+.modal-close:active {
+  outline: none;
 }
 
 .modal-map {
