@@ -853,9 +853,15 @@ input[type="radio"]:checked ~ .radio-label::before {
   left: calc(50% - 390px);
 }
 
-.modal-map img {
+.modal-map img,
+.modal-map iframe {
+  position: absolute;
   border: 7px solid #ffffff;
   box-shadow: 0 30px 50px 0 rgba(00, 01, 01, 0.25);
+}
+
+.modal-map iframe {
+  z-index: 1;
 }
 
 .modal-map .modal-close {

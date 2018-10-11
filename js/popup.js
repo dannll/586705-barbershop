@@ -4,6 +4,9 @@ var closeBtn = document.querySelector(".modal-close");
 var modalLogin = document.querySelector(".user-form input[name=\"login\"]");
 var modalForm = document.querySelector(".user-form");
 var modalPassword = document.querySelector(".user-form input[type=\"password\"]");
+var linkMap = document.querySelector(".js-refmap");
+var popupMap = document.querySelector(".modal-map");
+var closeBtnMap = document.querySelector(".modal-map .modal-close");
 var isStorageSupport = true;
 var storageLogin = "";
 
@@ -20,6 +23,10 @@ window.addEventListener("keydown", function(evt) {
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
     }
+
+    if (popupMap.classList.contains("modal-show")) {
+      popupMap.classList.remove("modal-show");
+    }
   }
 });
 
@@ -32,6 +39,19 @@ link.addEventListener("click", function(evt) {
   } else {
     modalLogin.focus();
   }
+});
+
+linkMap.addEventListener("click", function(evt) {
+  evt.preventDefault();
+
+  popupMap.classList.add("modal-show");
+});
+
+closeBtnMap.addEventListener("click", function(evt) {
+  evt.preventDefault();
+
+  popupMap.classList.remove("modal-show");
+
 });
 
 closeBtn.addEventListener("click", function(evt) {
