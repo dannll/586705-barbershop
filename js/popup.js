@@ -18,6 +18,7 @@ window.addEventListener("keydown", function(evt) {
     evt.preventDefault();
     if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
   }
 });
@@ -37,12 +38,16 @@ closeBtn.addEventListener("click", function(evt) {
   evt.preventDefault();
 
   popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 });
 
 modalForm.addEventListener("submit", function(evt) {
 
   if (!modalLogin.value || !modalPassword.value) {
     evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;/*Хак для обновления анимации*/
+    popup.classList.add("modal-error");
     console.log("Отсутствует значение логина и пароля");
   } else {
     if (isStorageSupport) {
