@@ -1253,3 +1253,7 @@ input[type="radio"]:disabled ~ label {
 .about-wrapper {
   flex-wrap: wrap;
 }
+
+.modal-show {
+  display: block;
+}
