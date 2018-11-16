@@ -12,7 +12,7 @@ var storageLogin = "";
 
 try {
   storageLogin = localStorage.getItem("login");
-} catch {
+} catch(e) {
   isStorageSupport = false;
 }
 
