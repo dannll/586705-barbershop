@@ -41,6 +41,13 @@ link.addEventListener("click", function(evt) {
   }
 });
 
+closeBtn.addEventListener("click", function(evt) {
+  evt.preventDefault();
+
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
+});
+
 linkMap.addEventListener("click", function(evt) {
   evt.preventDefault();
 
@@ -52,13 +59,6 @@ closeBtnMap.addEventListener("click", function(evt) {
 
   popupMap.classList.remove("modal-show");
 
-});
-
-closeBtn.addEventListener("click", function(evt) {
-  evt.preventDefault();
-
-  popup.classList.remove("modal-show");
-  popup.classList.remove("modal-error");
 });
 
 modalForm.addEventListener("submit", function(evt) {
